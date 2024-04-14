@@ -1,20 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 // Get the todos from previous session if available
-const getLocalStorageItems = () => {
-  const items = localStorage.getItem("todos")
-  if (items!=null) return JSON.parse(items)
-  return null
-}
+// const getLocalStorageItems = () => {
+//   const items = localStorage.getItem("todos")
+//   if (items!=null) return JSON.parse(items)
+//   return null
+// }
 
 const todoSlice = createSlice({
   name: "todos",
 
   // Todo State: If null in local storage, default todos are added
-  initialState: getLocalStorageItems() || [
+  initialState: [
     {id: 1, title: "Add new todos", completed: false},
     {id: 2, title: "Delete the existing ones", completed: false},
-    {id: 3, title: "All your todos are stored locally for later access", completed: false},
+    // {id: 3, title: "All your todos are stored locally for later access", completed: false},
     {id: 4, title: "Tap on a todo to mark/unmark as done", completed: true},
   ],
 
