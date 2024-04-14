@@ -44,7 +44,7 @@ export default function TodoItem({id, title, completed}) {
             }
           </div>
         </div>
-        <button title='Delete todo' onClick={handleDelete}><DeleteIcon /></button>
+        <button title='Delete todo' onClick={handleDelete} className='hover:text-[#f58a8a]'><DeleteIcon /></button>
       </div>
     </div>
   )
