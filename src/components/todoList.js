@@ -7,10 +7,8 @@ export default function TodoList() {
   return (
     <div className="flex flex-col gap-2">
       {todos.map(todo => {
-        return (
-          <TodoItem key={todo.id} id={todo.id} title={todo.title} completed={todo.completed}/>
-        )
+        return <TodoItem key={todo.id} id={todo.id} title={todo.title} completed={todo.completed}/>
       })}
-      </div>
+    </div>
   )
 }
