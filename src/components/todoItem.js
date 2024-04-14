@@ -29,7 +29,7 @@ export default function TodoItem({id, title, completed}) {
     <div>
       <div className="flex items-center gap-2 font-light">
         <div onMouseEnter={()=>setIsTodoHovered(true)} onMouseLeave={()=>setIsTodoHovered(false)} onClick={handleComplete} className={`relative flex items-center justify-between w-full px-3 py-1 gap-2 ${completed ? "bg-[#306844]" : "bg-[#353535]"} rounded-lg hover:cursor-pointer hover:brightness-110`}>
-          <span>{title}</span>
+          <span className='textWrap'>{title}</span>
           <div className={`${isTodoHovered ? "relative" : "hidden"}`}>
             {completed ?
               <div className='flex items-start gap-1 text-[#f58a8a]'>

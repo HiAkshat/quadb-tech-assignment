@@ -20,3 +20,9 @@ body {
   background-color: #111;
   color: white;
 }
+
+.textWrap{
+  text-wrap: wrap;
+  white-space: normal;
+  word-break: break-all;
+}
